@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Time Me' target in the 'Time Me' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
