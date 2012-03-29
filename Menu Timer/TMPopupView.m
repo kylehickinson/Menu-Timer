@@ -19,7 +19,7 @@
 
 - (id)initWithFrame:(NSRect)frame {
     if ((self = [super initWithFrame:frame])) {
-        self.contentFrame = NSMakeRect(frame.origin.x+CORNER_CLIP_RADIUS, frame.origin.y+(CORNER_CLIP_RADIUS + 3), frame.size.width-(CORNER_CLIP_RADIUS * 3), frame.size.height - (CORNER_CLIP_RADIUS * 2) - TRIANGLE_CLIP_BASE - 3);
+        self.contentFrame = NSMakeRect(frame.origin.x+CORNER_CLIP_RADIUS+1, frame.origin.y+(CORNER_CLIP_RADIUS + 3), frame.size.width-(CORNER_CLIP_RADIUS * 3)-1, frame.size.height - (CORNER_CLIP_RADIUS * 2) - TRIANGLE_CLIP_BASE - 3);
     }
     return self;
 }
